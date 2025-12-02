@@ -5,25 +5,16 @@ Sistema completo para cadastro e consulta de registros de carros, implementando 
 Cada registro de carro possui 4 campos:
 
 marca (string, obrigatório)
-
 modelo (string, obrigatório)
-
 ano (number, obrigatório, positivo)
-
 cor (string, obrigatório)
 
 ##  Tecnologias Utilizadas
 Backend: Node.js, Express
 
 Banco de Dados: SQLite (com SQLite3)
-
 Testes Unitários: Jest
-
 Testes de API: Supertest
-
-Automação Web: Selenium WebDriver
-
-Padrões de Projeto: Page Object Model (POM), Singleton
 
 ## Tipos de Testes Implementados
 1. Testes Unitários (Jest)
