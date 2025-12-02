@@ -69,9 +69,14 @@ async function create({ marca, modelo, ano, cor }) {
 // Código refatorado com validações e tratamento
 
 
-## Pré-requisitos para executar o projeto
-Node.js (v14 ou superior)
+# Instruções
+instalar jest:
 
+npm install --save-dev jest
+npx jest
+
+teste individual:
+npx jest tests/carros.test.js
 
 
 ## Grupo: Gabriel e João Prado
