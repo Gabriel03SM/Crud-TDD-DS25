@@ -73,6 +73,7 @@ async function create({ marca, modelo, ano, cor }) {
 instalar jest:
 
 npm install --save-dev jest
+
 npx jest
 
 teste individual:
