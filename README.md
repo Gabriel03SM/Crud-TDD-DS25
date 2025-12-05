@@ -36,37 +36,11 @@ Seguimos rigorosamente o ciclo Red → Green → Refactor:
 
 
 📝 Exemplo Concreto: Implementação da função create()
-### Fase RED (Teste falha)
 
-test('create cria um carro e persiste', async () => {
-    const carro = { marca: 'Fiat', modelo: 'Uno', ano: 2020, cor: 'Vermelho' };
-    const criado = await repo.create(carro);
-    expect(criado).toEqual({ marca: 'Fiat', modelo: 'Uno', ano: 2020, cor: 'Vermelho' });
-    // ❌ Teste FALHA: função create não existe
+#### Fase RED (Teste falha)
 
-
-### Fase GREEN
-
-async function create({ marca, modelo, ano, cor }) {
-    const novoCarro = { marca, modelo, ano, cor };
-    _data.push(novoCarro);
-    return novoCarro;
-}
-    // ✅ Teste PASSA: função básica implementada
-
-    
-### Fase REFACTOR (Melhorar o código)
-javascript
-async function create({ marca, modelo, ano, cor }) {
-    // Adiciona validações
-    validateNonEmpty(marca, 'marca');
-    validateNonEmpty(modelo, 'modelo');
-    if (typeof ano !== 'number' || ano <= 0) {
-        throw new Error('ano deve ser um número positivo');
-    }
-    validateNonEmpty(cor, 'cor');
-    
-// Código refatorado com validações e tratamento
+#### Fase GREEN  
+#### Fase REFACTOR (Melhorar o código)
 
 
 # Instruções
